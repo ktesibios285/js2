@@ -1,9 +1,12 @@
-import {calculateCircumference, calculateArea, calculateSphereVolume} from "./circleCalculator";
-import {convertToNumber} from "./validation";
-import {outputToElement} from "./display";
+import {calculateCircumference, calculateArea, calculateSphereVolume} from './circleCalculator.js';
+import {convertToNumber} from './validation.js';
+import {outputToElement} from './display.js';
 //For onclick button
 document.querySelector('#submitButton').addEventListener("click", function() {
     submitFunction('circumference');
+}, false);
+document.querySelector('#submitButtonArea').addEventListener("click", function() {
+    submitFunction('area');
 }, false);
 document.querySelector('#submitButtonVolume').addEventListener("click", function() {
     submitFunction('volume');
