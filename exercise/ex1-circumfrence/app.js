@@ -1,11 +1,11 @@
-import {calculateCircumference} from './circleCalculator.js';
+import {calculateCircumference} from "./circleCalculator.js";
 
-document.querySelector('#submitButton').onclick = submitFunction;
+document.querySelector("#submitButton").onclick = submitFunction;
 
 function submitFunction() {
     let radius = parseFloat(document.getElementById("radius").value);
-    let circumference = calculateCircumference(radius)
-    document.getElementById("output").innerHTML = `The circumference is ${circumference}!`;
-    return false
+    let circumference = calculateCircumference(radius);
+    document.getElementById("output").innerHTML = `The circumference is ${circumference}`;
+    return false;
 }
 
