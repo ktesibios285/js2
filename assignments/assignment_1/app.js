@@ -2,30 +2,12 @@ import {calculateCircumference, calculateArea, calculateSphereVolume} from "./ci
 import {convertToNumber} from "./validation";
 import {outputToElement} from "./display";
 //For onclick button
-document.querySelector("#submitButton").addEventListener(
-    "click",
-    function (e) {
-      submitFunction("circumference");
-      e.preventDefault();
-    },
-    false
-);
-document.querySelector("#submitAreaButton").addEventListener(
-    "click",
-    function (e) {
-      submitFunction("area");
-      e.preventDefault();
-    },
-    false
-);
-document.querySelector("#submitVolumeButton").addEventListener(
-    "click",
-    function (e) {
-      submitFunction("volume");
-      e.preventDefault();
-    },
-    false
-);
+document.querySelector('#submitButton').addEventListener("click", function() {
+    submitFunction('circumference');
+}, false);
+document.querySelector('#submitButtonVolume').addEventListener("click", function() {
+    submitFunction('volume');
+}, false);
 
 function submitFunction(calculationToMake) {
     let outputId = "output", inputId = "radius";
