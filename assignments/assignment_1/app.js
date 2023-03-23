@@ -37,7 +37,7 @@ function submitFunction(calculationToMake) {
         inputId += "Volume";
     }
     let userRadius = convertToNumber(document.getElementById(inputId).value);
-    if(userRadius) {
+    if(!userRadius) {
         outputToElement(outputId, "Please enter a valid number.", "red");
     } else {
         if (calculationToMake === "area") {
