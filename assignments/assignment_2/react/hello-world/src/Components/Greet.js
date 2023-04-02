@@ -1,10 +1,25 @@
 import React from 'react'
 
-// function Greet() {
-//     return <h1>Hello David!</h1>
-// }
-
 // JS6 arrow functions syntax
-const Greet = () => <h1>Hello David!</h1>
+// const Greet = ({name, nickName}) => {
+//     return (
+//         <div>
+//             <h1>Hello {name} a.k.a {nickName} 
+//             </h1>
+//             {props.children}
+//         </div>
+//     )
+// }
+const Greet = props => {
+    const {name, nickName} = props
+    return (
+        <div>
+            <h1>Hello {name} a.k.a {nickName} 
+            </h1>
+            {props.children}
+        </div>
+    )
+}
+
 
 export default Greet;
