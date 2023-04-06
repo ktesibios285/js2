@@ -19,8 +19,28 @@ import Form from './Components/Form'
 import LifcycleA from './Components/LifcycleA';
 import FragmentDemo from './Components/FragmentDemo';
 import Table from './Components/Table';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Layout from "./Components/Layout";
+import Home from "./Components/Home";
+import Blogs from './Components/Blogs';
+import Contact from "./Components/Contact";
 
-// Excersize  24 &25 - Updating Lifecycle Methods & Fragments
+// Class Exercise 
+function App() {
+    <div className="App">
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />}></Route>
+                    <Route path="blogs" element={<Blogs />}></Route>
+                    <Route path="contact" element={<Contact />}></Route>
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    </div>
+}
+
+// Excersize 24-25 Updating Lifecycle Methods & Fragments
 // class App extends Component {
 //   render () {
 //     return (
@@ -67,8 +87,8 @@ import Table from './Components/Table';
 //       {/* <UserGreeting /> */}
 //       {/* <ParentComponent /> */}
 //       {/* <EventBind /> */}
-//       {/*<FunctionClick /> */}
-//       {/* {<ClassClick />} */}
+//       {/* <FunctionClick /> */}
+//       {/* <ClassClick /> */}
 //       {/* <Counter /> */}
 //       {/* <Message /> */}
 //       {/* <Greet name="Robert" nickName="Squid">
