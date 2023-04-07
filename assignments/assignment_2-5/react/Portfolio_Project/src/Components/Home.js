@@ -27,7 +27,7 @@ function Home() {
           sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <div className='d-grid gap-2 d-md-flex justify-content-md-start'>
-              <Button variant='outline-success'>My Projects</Button>
+              <Button variant='outline-success' href='/projects'>My Projects</Button>
           </div>
         </Col>
       </Row>
